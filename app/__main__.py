@@ -3,12 +3,12 @@ from fastapi import FastAPI
 from fastapi.exceptions import RequestValidationError
 from starlette.responses import PlainTextResponse
 
-from app.settings.database import Base, engine
-from app.settings.settings import settings
+from settings.database import Base, engine
+from settings.settings import settings
 
-from app.modules.default.routers import router as default_router
-from app.modules.couriers.routers import router as couriers_router
-from app.modules.orders.routers import router as orders_router
+from modules.default.routers import router as default_router
+from modules.couriers.routers import router as couriers_router
+from modules.orders.routers import router as orders_router
 
 Base.metadata.create_all(bind=engine)
 

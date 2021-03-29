@@ -2,9 +2,9 @@ from fastapi import APIRouter, Depends
 from fastapi.responses import Response
 from sqlalchemy.orm import Session
 
-from app.models.courier import CourierDB
-from app.models.order import OrderDB
-from app.settings.database import get_db
+from models.courier import CourierDB
+from models.order import OrderDB
+from settings.database import get_db
 
 router = APIRouter()
 

@@ -5,10 +5,10 @@ from fastapi.responses import Response
 from sqlalchemy.orm import Session
 from starlette import status
 
-from app.models.courier import CourierDB
-from app.modules.couriers.schemas import CouriersPostRequest, CouriersIds, Courier, CourierItem, CourierUpdateRequest
-from app.repository import couriers_repo
-from app.settings.database import get_db
+from models.courier import CourierDB
+from modules.couriers.schemas import CouriersPostRequest, CouriersIds, Courier, CourierItem, CourierUpdateRequest
+from repository import couriers_repo
+from settings.database import get_db
 
 router = APIRouter()
 

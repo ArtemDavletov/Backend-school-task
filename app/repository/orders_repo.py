@@ -3,8 +3,8 @@ from typing import List
 from sqlalchemy import desc
 from sqlalchemy.orm import Session
 
-from app.models.order import OrderDB
-from app.modules.orders.schemas import OrderItem, OrdersAssignPostRequest, OrdersCompletePostRequest
+from models.order import OrderDB
+from modules.orders.schemas import OrderItem, OrdersAssignPostRequest, OrdersCompletePostRequest
 
 
 def create_order(

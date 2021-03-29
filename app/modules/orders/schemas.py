@@ -4,8 +4,8 @@ from typing import List, Optional
 
 from pydantic import BaseModel, Extra, Field, validator
 
-from app.repository import couriers_repo
-from app.settings.database import get_db
+from repository import couriers_repo
+from settings.database import get_db
 
 
 class OrderItem(BaseModel):

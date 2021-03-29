@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer, String, Float, PickleType
 from sqlalchemy.orm import relationship
 
-from app.modules.couriers.schemas import CourierGetResponse, CourierItem, CourierType
-from app.settings.database import Base
+from modules.couriers.schemas import CourierGetResponse, CourierItem, CourierType
+from settings.database import Base
 
 
 class CourierDB(Base):

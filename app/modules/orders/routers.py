@@ -5,10 +5,10 @@ from sqlalchemy.orm import Session
 from starlette import status
 from starlette.responses import Response
 
-from app.modules.orders.schemas import OrdersPostRequest, Order, OrdersIds, OrdersAssignPostRequest, \
+from modules.orders.schemas import OrdersPostRequest, Order, OrdersIds, OrdersAssignPostRequest, \
     OrdersCompletePostRequest, OrdersCompletePostResponse
-from app.repository import orders_repo
-from app.settings.database import get_db
+from repository import orders_repo
+from settings.database import get_db
 
 router = APIRouter()
 

@@ -3,7 +3,7 @@ import datetime
 from sqlalchemy import Column, Integer, Float, String, DateTime, ForeignKey, ARRAY
 from sqlalchemy.orm import relationship
 
-from app.settings.database import Base
+from settings.database import Base
 
 
 class OrderDB(Base):

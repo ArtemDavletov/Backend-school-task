@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 
-from app.models.courier import CourierDB
-from app.modules.couriers.schemas import CourierItem, CourierUpdateRequest
+from models.courier import CourierDB
+from modules.couriers.schemas import CourierItem, CourierUpdateRequest
 
 
 def create_courier(
