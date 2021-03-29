@@ -13,14 +13,14 @@ __all__ = (
 )
 
 
-@router.get('/o')
+@router.get('/all_orders')
 async def order(
         db: Session = Depends(get_db)
 ):
     return db.query(OrderDB).all()
 
 
-@router.get('/c')
+@router.get('/all_couriers')
 async def couriers(
         db: Session = Depends(get_db)
 ):
