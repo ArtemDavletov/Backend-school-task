@@ -13,4 +13,4 @@ venv
 venv2
 
 # Environment variables
-*/.env
+#*/.env
